@@ -9,12 +9,12 @@ Download the latest three episodes for npr hourly news.
 http://pymotw.com/2/xml/etree/ElementTree/parse.html
 
 '''
-import xml.etree.ElementTree as ET
-import urllib
 import os
 import re
-from dateutil import parser
+import urllib
 import datetime
+import xml.etree.ElementTree as ET
+from dateutil import parser
 
 
 NS_MAP = dict(itunes="http://www.itunes.com/dtds/podcast-1.0.dtd")
