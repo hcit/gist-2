@@ -7,7 +7,7 @@
 # in case of shutdown for high temp
 #
 
-THRESHOLD=40 # 80°C
+THRESHOLD=80 # 80°C
 SYS_FILE="/sys/class/thermal/thermal_zone0/temp"
 TITLE="Your CPU is BURNNING!"
 
