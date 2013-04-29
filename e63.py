@@ -22,6 +22,7 @@ import telephone
 import contacts
 import inbox
 import logs
+import sysinfo
 
 DEFAULT_AP = u'GGG'
 # the web handler for message forwarding
@@ -38,7 +39,8 @@ socket.set_default_access_point(DEFAULT_AP)
 def notify(message):
     print 'notify', message
     playload = {'key': KEY,
-                'message': message.encode('utf8')}
+                'message': message.encode('utf8'),
+                'battery': sysinfo.battery()}
     params = urllib.urlencode(playload)
     remote_fh = urllib.urlopen(URL, params)
     result = remote_fh.read()

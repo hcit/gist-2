@@ -33,3 +33,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+
+mobi/mysql-refman.yml
+mobi/book.opf
+mobi/toc.ncx
+download/download.db
+selenium/penguin.yml
